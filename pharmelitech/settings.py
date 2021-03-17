@@ -25,7 +25,7 @@ SECRET_KEY = 'n6h=30m!$huvfef&bsr#see7)6lr%d4t()@l*tj46!6$4d%)3b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['192.168.217.136']
+ALLOWED_HOSTS = ['192.168.43.123']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'orders.apps.OrdersConfig',
+    'active_link',
 ]
 
 MIDDLEWARE = [

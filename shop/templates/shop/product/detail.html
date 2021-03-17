@@ -21,7 +21,7 @@
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-<img src="{% if product.image %}{{ product.image.url }}{% else %} {% static "img/no_image.png" %}{% endif %}"  class="img-fluid" alt="">
+<img src="{% if product.image %}{{ product.image.url }}{% else %} {% static "img/no_image.png" %}{% endif %}"  class="img-fluid img-thumbnail img-rounded" alt="">
 
         </div>
         <!--Grid column-->
@@ -55,10 +55,10 @@
 
             <p>{{ product.description|linebreaks }}</p>
 
-            <form action="{% url "cart:cart_add" product.id %}" method="post" class="d-flex justify-content-left">
+            <form action="{% url "cart:cart_add" product.id %}" method="post" class="d-flex justify-content-left align-items-center">
               {{ cart_product_form }}
               {% csrf_token %}
-              <input type="submit" value="Ajouter au pannier" aria-label="Search" class="form-control" style="width: 100px">
+              <input type="submit" value="Ajouter au panier" aria-label="Search" class="btn btn-primary btn-sm">
               
               
             </form>

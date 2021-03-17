@@ -11,7 +11,13 @@
 </br>
 </br>
 </br>
-  <h1>Thank you</h1>
-  <p>Votre commande a été enregistrée avec succes. Votre numéro de commande est :  
-  <strong>{{ order.id }}</strong>.</p>
+<div class="container">
+  <div class="jumbotron text-center">
+    <h1>Thank you</h1>
+    <p>Votre commande a été enregistrée avec succes. Votre numéro de commande est :  
+    <strong>{{ order.id }}</strong>.</p>
+    <a class="btn btn-primary btn-lg" href="{% url "shop:product_list" %}" role="button">Return Home</a>
+  </div>
+</div>
+  
 {% endblock %}
